@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -108,6 +109,10 @@
 
 /*
 ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+=======
+/*
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+>>>>>>> b442312 (Initial commit)
 */
 
 /*
@@ -138,6 +143,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+<<<<<<< HEAD
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
 7. Disable tap highlights on iOS
@@ -145,6 +151,11 @@
 
 html,
 :host {
+=======
+*/
+
+html {
+>>>>>>> b442312 (Initial commit)
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -154,6 +165,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
+<<<<<<< HEAD
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
@@ -162,6 +174,10 @@ html,
   /* 6 */
   -webkit-tap-highlight-color: transparent;
   /* 7 */
+=======
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+>>>>>>> b442312 (Initial commit)
 }
 
 /*
@@ -233,10 +249,15 @@ strong {
 }
 
 /*
+<<<<<<< HEAD
 1. Use the user's configured `mono` font-family by default.
 2. Use the user's configured `mono` font-feature-settings by default.
 3. Use the user's configured `mono` font-variation-settings by default.
 4. Correct the odd `em` font sizing in all browsers.
+=======
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+>>>>>>> b442312 (Initial commit)
 */
 
 code,
@@ -245,12 +266,17 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
+<<<<<<< HEAD
   font-feature-settings: normal;
   /* 2 */
   font-variation-settings: normal;
   /* 3 */
   font-size: 1em;
   /* 4 */
+=======
+  font-size: 1em;
+  /* 2 */
+>>>>>>> b442312 (Initial commit)
 }
 
 /*
@@ -309,18 +335,24 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+<<<<<<< HEAD
   font-feature-settings: inherit;
   /* 1 */
   font-variation-settings: inherit;
   /* 1 */
+=======
+>>>>>>> b442312 (Initial commit)
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
   /* 1 */
   line-height: inherit;
   /* 1 */
+<<<<<<< HEAD
   letter-spacing: inherit;
   /* 1 */
+=======
+>>>>>>> b442312 (Initial commit)
   color: inherit;
   /* 1 */
   margin: 0;
@@ -344,9 +376,15 @@ select {
 */
 
 button,
+<<<<<<< HEAD
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
+=======
+[type='button'],
+[type='reset'],
+[type='submit'] {
+>>>>>>> b442312 (Initial commit)
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -466,6 +504,7 @@ menu {
 }
 
 /*
+<<<<<<< HEAD
 Reset default styling for dialogs.
 */
 
@@ -474,6 +513,8 @@ dialog {
 }
 
 /*
+=======
+>>>>>>> b442312 (Initial commit)
 Prevent resizing textareas horizontally by default.
 */
 
@@ -548,6 +589,7 @@ video {
   height: auto;
 }
 
+<<<<<<< HEAD
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden]:where(:not([hidden="until-found"])) {
@@ -794,4 +836,108 @@ video {
   .md\:place-items-center {
     place-items: center;
   }
+=======
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.bg-custom-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 1 1 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+>>>>>>> b442312 (Initial commit)
 }

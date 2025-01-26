@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
     "clean": "rm -rf dist/*",
     "copy:html": "cp src/index.html dist/",
     "build:vite": "vite build",

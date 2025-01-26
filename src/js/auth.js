@@ -1,4 +1,5 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js'
+import { supabase } from '../lib/supabaseConfig.js'
+
 export const signUp = async (username, password, email) => {
  const { data, error } = await supabase.auth.signUp({
    email,

@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
-    "build:js": "terser src/js/script.js -o dist/script.min.js"
-  },
+  "clean": "rm -rf dist/*",
+  "copy:html": "cp src/index.html dist/",
+  "build:js": "terser src/js/script.js -o dist/script.min.js",
+  "build:css": "tailwindcss -i ./src/input.css -o ./dist/style.css",
+  "build": "npm run clean && npm run copy:html && npm run build:js && npm run build:css"
+},
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.1.8",
     "terser": "^5.37.0"
   },

@@ -509,6 +509,10 @@ video {
   margin-right: auto;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -529,18 +533,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .block {
   display: block;
 }
@@ -557,10 +549,6 @@ video {
   display: none;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-full {
   width: 100%;
 }
@@ -573,16 +561,8 @@ video {
   max-width: 1200px;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-center {

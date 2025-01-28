@@ -1,5 +1,5 @@
 import { supabase } from './supabaseConfig.js'; // Named import
-console.log('Supabase client imported:', supabase);
+
 
 
 

@@ -9,5 +9,5 @@ export default defineConfig({
   server: {
     port: 5000, // Set the port to 5000
   },
-  root: path.resolve(__dirname, 'src'), 
+  root: path.resolve(__dirname, 'src'),
 });

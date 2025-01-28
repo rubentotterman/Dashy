@@ -8,6 +8,11 @@ export const signUp = async (username, password, email) => {
       data: { username },
     },
   });
+
+  if (data && data.session) {
+    localStorage.setItem('sessionToken', data.session.access_token);
+  }
+
   return { data, error };
 };
 
@@ -57,6 +62,26 @@ export const signUpUser = async (e) => {
     return;
   }
 
-  alert('Signup successful! Please check your email to verify your account.');
-  window.location.href = '/dashboard';
+  if (data && data.session) {
+    alert('signup successfull! Redirecting to dashboard...');
+    window.location.href = '/dashboard';
+  } else {
+    alert('signup succesful! please check your email to verify your account')
+  }
+};
+
+export const isAuthenticated = () => {
+  return !!localStorage.getItem('sessionToken');
+};
+
+export const signOut = async () => {
+  try {
+    const { error } = await supabase.auth.signOut();
+    if (error) throw error;
+    localStorage.removeItem('sessionToken');
+    return { success: true };
+  } catch (error) {
+    console.error('Error signing out:', error.message);
+    return { success: false, error: error.message };
+  }
 };

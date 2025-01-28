@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashy</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./input.css">
+    <script type="module" src="https://esm.sh/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-custom-black">
-    <h1 class="">Hello Tailwind</h1>
-    
+<body class="bg-black">
+    <div id="wrapper" class="w-full mx-auto max-w-[1200px] px-[60px]">
+        <nav class="flex justify-between py-4">
+            <h1 class="text-white font-bold text-2xl">Dashy</h1>
+            <button class="bg-blue-500 hover:bg-blue-600 transition duration-300 text-white text-sm py-1 px-4 rounded-lg">Login</button>
+        </nav>
+        <div id="hero" class="grid grid-cols-1 md:grid-cols-2 md:place-items-center">
+            <div class="left px-6 hidden md:block">
+              <img class="w-full h-full" src="./assets/images/vimal-s-XN_8GwQeW6c-unsplash_1-removebg.png" alt="">            </div>
+            <div class="right px-6 text-white">
+                <div class="md:min-h-screen mt-12 md:mt-0 flex items-center justify-center">
+                    <div class="rounded-lg shadow-md w-96">
+                      <h2 class="text-xl font-bold">Sign up</h2>
+                      <p class="text-xs mb-6">Sign up to Dashy, the all in one dashboard for all your socials</p>
+                      <form>
+                        <div class="mb-4">
+                          <label for="username" class="block text-white text-sm font-bold mb-2"></label>
+                          <input 
+                            type="username" 
+                            id="username" 
+                            class="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your username"
+                          >
+                        </div>
+                        <div class="mb-4">
+                          <label for="password" class="block text-white text-sm font-bold mb-2"></label>
+                          <input 
+                            type="password" 
+                            id="password" 
+                            class="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your password"
+                          >
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-white text-sm font-bold mb-2"></label>
+                            <input 
+                              type="email" 
+                              id="email" 
+                              class="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                              placeholder="Enter your email"
+                            >
+                          </div>
+                        <button 
+                          type="submit" 
+                          class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+                        >
+                          Sign up
+                        </button>
+                      </form>
+                      <div class="text-center mt-4 mb-4">
+                        <h3 class="font-bold">Or</h3>
+                      </div>
+                      <div class="flex gap-2 justify-center">
+                        <div class="bg-gray-800 py-2 px-4 rounded-md w-full text-center"><i class="fa-brands fa-google mr-2"></i>Google</div>
+                        <div class="bg-gray-800 py-2 px-4 rounded-md w-full text-center"><i class="fa-brands fa-discord mr-2"></i>Discord</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script type="module" src="js/script.js"></script>
 </html>

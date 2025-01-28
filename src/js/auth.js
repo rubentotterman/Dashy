@@ -8,6 +8,13 @@ export const signUp = async (username, password, email) => {
       data: { username },
     },
   });
+
+
+  if (data && data.session) {
+    // Store the session token
+    localStorage.setItem('sessionToken', data.session.access_token);
+  }
+
   return { data, error };
 };
 
@@ -57,6 +64,10 @@ export const signUpUser = async (e) => {
     return;
   }
 
-  alert('Signup successful! Please check your email to verify your account.');
-  window.location.href = '/dashboard';
+  if (data && data.session) {
+    alert('Signup successful! Redirecting to dashboard...');
+    window.location.href = '/dashboard';
+  } else {
+    alert('Signup successful! Please check your email to verify your account.');
+  }
 };

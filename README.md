@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Dashy
 =======
@@ -24,3 +25,7 @@ npm run dev
 - The dist folder includes index.html & complied style.css
 - The src folder includes input.css which a Tailwind pre-compile file
 >>>>>>> b442312 (Initial commit)
+=======
+
+# Dashy
+>>>>>>> fde19de (Supabase initialization)

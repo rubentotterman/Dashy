@@ -3,6 +3,7 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     extend: {},
 =======
     extend: {
@@ -11,6 +12,9 @@ module.exports = {
       }
     },
 >>>>>>> b442312 (Initial commit)
+=======
+    extend: {},
+>>>>>>> fde19de (Supabase initialization)
   },
   plugins: [],
 }

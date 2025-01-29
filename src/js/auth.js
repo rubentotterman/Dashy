@@ -1,7 +1,11 @@
 import { supabase } from './supabaseConfig.js'; // Named import
 
 
+const signinButton = document.getElementById('loginButton');
 
+loginButton.addEventListener('click', () => {
+  window.location.href = 'login.html';
+});
 
 export const signUp = async (username, password, email) => {
  const { data, error } = await supabase.auth.signUp({

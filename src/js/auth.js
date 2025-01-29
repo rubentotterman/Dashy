@@ -12,8 +12,8 @@ loginButton.addEventListener('click', () => {
 
 export const signUp = async (username, password, email) => {
  const { data, error } = await supabase.auth.signUp({
-   email: 'ruben_totterman@hotmail.com',
-   password: 'Counterstrike123',
+   email: email,
+   password: password,
    options: {
      data: { username }
    }

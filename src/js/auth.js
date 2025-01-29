@@ -1,5 +1,8 @@
 import { supabase } from './supabaseConfig.js'; // Named import
 
+const { data, error } = await supabase.auth.resetPasswordForEmail('ruben_totterman@hotmail.com', {
+  redirectTo: 'http://yoursite.com/update-password',
+});
 
 const signinButton = document.getElementById('loginButton');
 
@@ -9,8 +12,8 @@ loginButton.addEventListener('click', () => {
 
 export const signUp = async (username, password, email) => {
  const { data, error } = await supabase.auth.signUp({
-   email,
-   password,
+   email: 'ruben_totterman@hotmail.com',
+   password: 'Counterstrike123',
    options: {
      data: { username }
    }

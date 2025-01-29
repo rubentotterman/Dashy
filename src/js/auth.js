@@ -60,5 +60,5 @@ export const signUpUser = async (e) => {
 
  
 
- window.location.href = '/dashboard' // Redirect after success
+ window.location.href = 'dashboard.html' // Redirect after success
 };

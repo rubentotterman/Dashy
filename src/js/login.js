@@ -21,8 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 password: password
             });
 
+
             if (error) {
                 console.log('Auth Error Details:', error);
+                alert("Invalid login credentials. Please try again.")
                 throw error;
             }
 

@@ -17,3 +17,13 @@ signoutButton.addEventListener('click', async () => {
         console.error('Error signing out:', error.message);
     }
 });
+
+
+
+visitFacebookButton.addEventListener('click', () => {
+    window.open('https://www.facebook.com', '_blank');
+});
+
+document.getElementById('deleteCardButton').addEventListener('click', async () => {
+    document.getElementById('card').remove();
+});
